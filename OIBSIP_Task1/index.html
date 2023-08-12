@@ -3,45 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Calculator</title>
-    <style>
-        *{
-            box-sizing: border-box;
-        }
-        #calc{
-            background-color: rgb(140, 174, 240);
-            padding: 20px;
-            margin: auto;
-            width: 415px;
-            height: 500px;
-            border-radius:10px;
-        }
-        #display{
-            height: 100px;
-            width: 360px;
-            margin:auto;
-            background-color: white;
-            border-radius: 10px;
-            font-size: 30px;
-        }
-        #buttons{
-            display: grid;
-            grid-template-columns: 75px 75px 75px 75px 75px;
-            grid-template-rows: 70px 70px 70px 70px 70px;
-            padding: 5px 0px;
-            
-        }
-        button{
-            border-radius: 5px;
-            margin:3px 5px;
-            cursor: pointer;
-            color: white;
-            font-weight: bold;
-            background-color: rgb(157, 219, 244);
-            border: 1px rgb(157, 219, 244) solid;
-            font-size: 20px;
-        }
-    </style>
 </head>
 <body>
     <div id="container">
@@ -78,47 +41,6 @@
             </div>
         </div>
     </div>
-    <script>
-        function show(data){
-            document.getElementById("display").innerHTML+=data;
-        }
-        function clear1(){
-            document.getElementById("display").innerHTML="";
-        }
-        function calculate(){
-            try{
-                var x=document.getElementById("display").innerHTML;
-                if(x.includes("sin")){
-                    x=x.split('(');
-                    x=x[1].split(')');
-                    x=x[0];
-                    document.getElementById("display").innerHTML=Math.sin(x);
-                }
-                if(x.includes("cos")){
-                    x=x.split('(');
-                    x=x[1].split(')');
-                    x=x[0];
-                    document.getElementById("display").innerHTML=Math.cos(x);
-                }
-                if(x.includes("tan")){
-                    x=x.split('(');
-                    x=x[1].split(')');
-                    x=x[0];
-                    document.getElementById("display").innerHTML=Math.tan(x);
-                }
-                document.getElementById("display").innerHTML=eval(document.getElementById("display").innerHTML);
-            }
-            catch(error){
-                document.getElementById("display").innerHTML="SYNTAX ERROR";
-            }
-            
-        }
-        
-        function last1(){
-            var x=document.getElementById("display").innerHTML;
-            x=x.slice(0,-1);
-            document.getElementById("display").innerHTML=x;
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
