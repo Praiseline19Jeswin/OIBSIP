@@ -1,0 +1,21 @@
+#container{
+    display: grid;
+    grid-template-areas: "a b c";
+    margin:auto;
+}
+#add{
+    margin-top: 30%;
+    grid-area: a;
+    padding:10px;
+}
+#tasks{
+    grid-area: b/b/c/c;
+    font-size: 20px;
+    padding: 10px;
+    border: 1px navy solid;
+    height:100vh;
+    border-radius: 10px;
+}
+#save{
+    width: 75px;
+}
