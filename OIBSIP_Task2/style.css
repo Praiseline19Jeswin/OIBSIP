@@ -1,0 +1,23 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+#container{
+    background-color: black;
+    height: 100%;
+    width:500px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0px auto;
+    padding: 7px;
+}
+#awards h2{
+    font-weight: bold;
+}
+#quote h3{
+    font-style: italic;
+    font-weight: bold;
+}
+#top h2{
+    font-weight: bold;
+}
