@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+<style>
+    #container{
+        background-color: rgb(246, 189, 183);
+        padding: 10px;
+        margin: 0px auto;
+        border: 1px salmon solid;
+        border-radius: 10px;
+        height: 500px;
+        width: 400px;
+        font-size: 15px;
+    }
+    input{
+        height: 20px;
+        width: 350px;
+        margin-bottom: 30px;
+        border-radius: 5px;
+    }
+    label{
+        font-weight: bold;
+    }
+    #sub1{
+        height: 30px;
+        width: 100px;
+        border-radius: 5px;
+        background-color : skyblue;
+        margin-left: 150px;
+    }
+    #sub1:hover{
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+    <div id="container">
+        <h2 style="text-align: center;">Login</h2>
+        <p id="error1"><p>
+        <label for="user1">Enter Username:</label>
+        <br>
+        <input type="text" id="user1" placeholder="Username">
+        <br>
+        <label for="p3">Enter Password:</label>
+        <br>
+        <input type="password" id="p3" placeholder="Password">
+        <br>
+        <p>Do not have an account ? <a href="index.html" style="text-decoration: none;">Sign up</a></p>
+        <br>
+        <button onclick="check2()" id="sub1">Login</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
